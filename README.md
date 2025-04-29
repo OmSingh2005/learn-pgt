@@ -7,7 +7,7 @@
 
 An intelligent web application that transforms how students interact with course materials by generating structured, AI-powered learning prompts and personalized quizzes.
 
-![Project Demo Screenshot](https://via.placeholder.com/800x400?text=AI+Prompt+Generator+Demo)
+</--- ![Project Demo Screenshot](link) --->
 
 ## ✨ Features
 
@@ -77,16 +77,28 @@ An intelligent web application that transforms how students interact with course
 ## 📊 Project Structure
 
 ```
-ai-prompt-generator/
-├── frontend/           # Next.js frontend application
-│   ├── components/     # Reusable UI components
-│   ├── pages/          # Application routes
-│   └── public/         # Static assets
-├── backend/            # Express backend server
-│   ├── controllers/    # Request handlers
-│   ├── services/       # Business logic
-│   └── routes/         # API endpoints
-└── docs/               # Documentation
+learn-pgt/
+├── public/                # Static assets
+│   └── (fonts, images)
+├── src/
+│   ├── app/               # App Router (Next.js 13+)
+│   │   ├── (root layout)
+│   │   ├── api/           # API routes (if needed)
+│   │   ├── components/    # Reusable UI components
+│   │   │   ├── CourseInputForm.jsx
+│   │   │   ├── PromptDisplay.jsx
+│   │   │   ├── WeaknessInput.jsx
+│   │   │   └── QuizGenerator.jsx
+│   │   ├── lib/           # Utility functions & services
+│   │   │   ├── aiService.js   # Gemini API calls
+│   │   │   └── prompts.js     # Prompt templates
+│   │   ├── styles/        # Global CSS
+│   │   │   └── globals.css
+│   │   └── page.jsx       # Main page
+│   └── models/            # Data models (if needed)
+├── next.config.js         # Next.js config
+├── package.json
+└── README.md
 ```
 
 ## 🔮 Future Roadmap
@@ -120,4 +132,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ---
 
-Built with ❤️ for students worldwide. Enhance your learning journey with AI-powered prompts!
+Built with ❤️ for students. Enhance your learning journey with AI-powered prompts!
